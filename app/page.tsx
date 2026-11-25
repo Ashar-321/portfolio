@@ -127,7 +127,7 @@ export default function Home() {
         <section className="hero section-shell" aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="availability"><span /><span>Building thoughtful web experiences</span></div>
-            <p className="eyebrow"><span>WEB DEVELOPER</span><i /> <span>PAKISTAN · AVAILABLE WORLDWIDE</span></p>
+            <p className="eyebrow"><span>Full Stack Developer</span><i /> <span>PAKISTAN · AVAILABLE WORLDWIDE</span></p>
             <h1 id="hero-title">Hi, I’m Ashar.<br />I build <em>useful</em><br className="desktop-break" /> things for the web<span className="hero-period">.</span></h1>
             <p className="hero-intro">Frontend-focused developer creating considered interfaces, Shopify experiences, and web apps that make everyday work feel simpler.</p>
             <div className="hero-actions">
