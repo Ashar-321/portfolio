@@ -29,7 +29,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 - Supplied screenshots remain in their original project folders and appear as additional gallery items. Other projects can use `public/projects/<project-slug>/screen-<number>.png`; empty gallery frames show the expected path.
 - Add another Shopify app by adding a project to the `projects` array in `lib/projects.ts`. Each project gets a detail route at `/work/<slug>`.
 - Technology names, descriptions, and inline SVG icons are in `lib/projects.ts` and `components/tech-icon.tsx`.
-- Replace the clearly marked review placeholders in `components/testimonials.tsx` with approved client review text and the right country attribution.
+- The client testimonials in `components/testimonials.tsx` use the approved quotes and public attributions supplied for this portfolio.
 - The floating WhatsApp button is in `components/whatsapp-float.tsx`; its link uses the supplied Pakistan number in international format.
 - Update the contact link in `app/page.tsx` with Ashar's email address. The current link opens a new email draft without a recipient.
 - Review the title and description in `app/layout.tsx`, and add the production domain to the metadata once known.

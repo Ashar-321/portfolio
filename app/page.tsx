@@ -6,7 +6,7 @@ import { useState, type CSSProperties } from "react";
 import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
 import { TechIcon } from "@/components/tech-icon";
 import { ProjectArtwork } from "@/components/project-artwork";
-import { ProjectNotes } from "@/components/project-notes";
+import { Testimonials } from "@/components/testimonials";
 import { projects, technologies, technologyDescriptions, type Project, type ProjectCategory } from "@/lib/projects";
 
 function Icon({ name, size = 18 }: { name: "arrow" | "menu" | "close" | "spark" | "code" | "mail"; size?: number }) {
@@ -116,7 +116,7 @@ export default function Home() {
             <a href="#work" onClick={closeMenu}>Work</a>
             <a href="#about" onClick={closeMenu}>About</a>
             <a href="#stack" onClick={closeMenu}>Tech stack</a>
-            <a href="#project-notes" onClick={closeMenu}>Project notes</a>
+            <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
           </nav>
           <a className="header-cta" href="#contact">Let’s talk <Icon name="arrow" size={15} /></a>
@@ -174,11 +174,11 @@ export default function Home() {
           <div className="stack-note" data-reveal><span className="stack-note-icon"><Icon name="spark" size={18} /></span><p>Always learning. Currently exploring better patterns for <strong>accessible, fast, and maintainable</strong> interfaces.</p><span className="note-arrow">↘</span></div>
         </section>
 
-        <section className="project-notes-section section-shell" id="project-notes" aria-labelledby="project-notes-title">
-          <div className="section-heading project-notes-heading" data-reveal>
-            <div><p className="section-kicker"><span>04</span> PRODUCT THINKING</p><h2 id="project-notes-title">The thinking behind <em>the screens.</em></h2><p className="section-intro">A few notes on the workflows represented in these four mobile app concepts.</p></div>
+        <section className="testimonials-section section-shell" id="testimonials" aria-labelledby="testimonials-title">
+          <div className="section-heading testimonials-heading" data-reveal>
+            <div><p className="section-kicker"><span>04</span> CLIENT TESTIMONIALS</p><h2 id="testimonials-title">Kind words from <em>good people.</em></h2><p className="section-intro">Feedback shared by clients and collaborators.</p></div>
           </div>
-          <div className="project-notes-wrap" data-reveal><ProjectNotes /></div>
+          <div className="testimonial-wrap" data-reveal><Testimonials /></div>
         </section>
 
         <section className="contact-section section-shell" id="contact" aria-labelledby="contact-title">
@@ -189,7 +189,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#top">ashar<span>.</span></a><p>Thoughtful interfaces.<br />Useful products.</p><div className="footer-links"><a href="#work">Work</a><a href="#about">About</a><a href="#stack">Tech stack</a><a href="#project-notes">Project notes</a><a href="#contact">Contact</a></div><a className="footer-connect" href="#contact">Let’s work together <Icon name="arrow" size={15} /></a></div><div className="footer-legal"><span>© 2026 Ashar</span><span>Designed & built with care <b>✳</b></span><a href="#top">Back to top ↑</a></div></footer>
+      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#top">ashar<span>.</span></a><p>Thoughtful interfaces.<br />Useful products.</p><div className="footer-links"><a href="#work">Work</a><a href="#about">About</a><a href="#stack">Tech stack</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div><a className="footer-connect" href="#contact">Let’s work together <Icon name="arrow" size={15} /></a></div><div className="footer-legal"><span>© 2026 Ashar</span><span>Designed & built with care <b>✳</b></span><a href="#top">Back to top ↑</a></div></footer>
     </>
   );
 }
