@@ -12,6 +12,7 @@ export function ProjectGallery({ project, screenshotFolder }: { project: Project
   const reduceMotion = useReducedMotion();
   const activeImage = activeIndex === null ? undefined : project.screenshots[activeIndex];
   const imageIndexes = useMemo(() => project.screenshots.flatMap((screen, index) => screen.src ? [index] : []), [project.screenshots]);
+  const isMobileGallery = project.category === "Mobile apps";
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -43,8 +44,8 @@ export function ProjectGallery({ project, screenshotFolder }: { project: Project
           const expectedPath = screenshot.expectedPath ?? `${screenshotFolder}/screen-${index + 1}.png`;
           return (
             <figure className={index === 0 ? "case-screenshot primary-shot" : "case-screenshot"} key={screenshot.label} data-reveal style={{ "--reveal-delay": `${index * 90}ms` } as CSSProperties}>
-              <div className={`screenshot-stage screenshot-${project.visual}`}>
-                <div className="screenshot-chrome"><span /><span /><span /><i>{project.title}</i></div>
+              <div className={`screenshot-stage screenshot-${project.visual}${isMobileGallery ? " mobile-gallery-stage" : ""}`}>
+                {!isMobileGallery && <div className="screenshot-chrome"><span /><span /><span /><i>{project.title}</i></div>}
                 {screenshot.src ? (
                   <div className="screenshot-image">
                     <button className="gallery-image-button" type="button" onClick={() => setActiveIndex(index)} aria-label={`Open ${screenshot.label} image`}>

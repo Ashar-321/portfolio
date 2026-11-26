@@ -275,24 +275,25 @@ export const projects: Project[] = [
       "A mobile-first study companion that turns course notes into short explanations, practice questions, and a revision schedule shaped around the learner's goals.",
     stack: ["React Native", "TypeScript", "AI"],
     visual: "mobile-study",
+    coverImage: "/projects/ai-study-coach/screen-1.png",
     points: [
       "Ask an AI tutor questions about study materials.",
       "Generate short quizzes and revision cards.",
       "Adjust a study plan as topics are completed.",
     ],
     screenshots: [
-      { label: "Study plan", alt: "AI Study Coach mobile concept screen", preview: true },
-      { label: "AI tutor chat", alt: "AI Study Coach tutor chat concept screen" },
-      { label: "Practice session", alt: "AI Study Coach practice concept screen" },
+      { label: "Study dashboard and planner", src: "/projects/ai-study-coach/screen-1.png", alt: "AI Study Coach study dashboard, daily plan, AI assistant, and study planner" },
+      { label: "Personalized tutor and progress", src: "/projects/ai-study-coach/screen-2.png", alt: "AI Study Coach personalized Lumina tutor, learning dashboard, and progress analytics" },
+      { label: "Learning material and quiz", src: "/projects/ai-study-coach/screen-3.png", alt: "AI Study Coach lesson summary, flashcards, and multiple-choice quiz" },
     ],
   },
   {
     id: "field-assistant",
     number: "10",
     slug: "ai-field-sales-mobile",
-    title: "AI Field Sales Companion",
+    title: "AI Sales Companion",
     category: "Mobile apps",
-    kind: "React Native mobile concept",
+    kind: "React Native mobile sales concept",
     status: "concept",
     description:
       "A React Native field-sales companion concept for customer visits, product availability, order capture, and AI-assisted follow-ups.",
@@ -300,15 +301,16 @@ export const projects: Project[] = [
       "A mobile workspace designed for sales representatives on the move. AI tools can turn visit notes into follow-up tasks, surface account context, and prepare an order draft for review.",
     stack: ["React Native", "TypeScript", "AI"],
     visual: "mobile-field",
+    coverImage: "/projects/ai-sales-companion/screen-1.png",
     points: [
       "Keep customer visits and follow-up actions together.",
       "Check product availability and prepare orders in the field.",
       "Use AI to summarize voice notes and suggest next steps.",
     ],
     screenshots: [
-      { label: "Visit overview", alt: "AI Field Sales Companion mobile concept screen", preview: true },
-      { label: "Customer notes", alt: "AI Field Sales customer notes concept screen" },
-      { label: "Order draft", alt: "AI Field Sales order draft concept screen" },
+      { label: "LeadIQ customer workspace", src: "/projects/ai-sales-companion/screen-1.png", alt: "AI Sales Companion lead list, customer details, and follow-up notes" },
+      { label: "Field visit route planner", src: "/projects/ai-sales-companion/screen-2.png", alt: "AI Sales Companion field sales route with customer visits, drive time, and suggested stops" },
+      { label: "Mobile sales toolkit", src: "/projects/ai-sales-companion/screen-3.png", alt: "AI Sales Companion mobile sales toolkit, visit plan, customer profile, and product catalogue" },
     ],
   },
   {
@@ -407,6 +409,7 @@ export const projects: Project[] = [
     stack: ["React Native", "TypeScript", "AI"],
     visual: "attendance",
     assetFolder: "ai-attendance",
+    coverImage: "/projects/ai-attendance/screen-1.png",
     points: [
       "Check in and out with a clear status and work-hour summary.",
       "Review a monthly attendance calendar, late arrivals, and leave records.",
@@ -414,9 +417,9 @@ export const projects: Project[] = [
       "Surface attendance patterns and team follow-ups for review.",
     ],
     screenshots: [
-      { label: "Employee home", alt: "AI Attendance mobile app home screen concept", preview: true, expectedPath: "/projects/ai-attendance/preview-1.png" },
-      { label: "AI check-in verification", alt: "AI Attendance verification and check-in concept screen", expectedPath: "/projects/ai-attendance/preview-2.png" },
-      { label: "Attendance analytics", alt: "AI Attendance calendar and analytics concept screen", expectedPath: "/projects/ai-attendance/preview-3.png" },
+      { label: "Attendance dashboard and verification", src: "/projects/ai-attendance/screen-1.png", alt: "AI Attendance employee check-in, face verification, and attendance report screens" },
+      { label: "Team time tracking", src: "/projects/ai-attendance/screen-2.png", alt: "AI Attendance team overview, face match, and time tracker screens" },
+      { label: "Location-aware check-in", src: "/projects/ai-attendance/screen-3.png", alt: "AI Attendance face recognition, daily schedule, and location confirmation screens" },
     ],
   },
   {
@@ -434,6 +437,7 @@ export const projects: Project[] = [
     stack: ["React Native", "TypeScript", "AI"],
     visual: "cattle-iot",
     assetFolder: "cattle-iot-erp",
+    coverImage: "/projects/cattle-iot-erp/screen-1.png",
     points: [
       "Review herd health, milk production, and feed activity from a mobile dashboard.",
       "Monitor ESP32 sensor status, barn temperature, and humidity in real time.",
@@ -441,9 +445,9 @@ export const projects: Project[] = [
       "Use AI insights to review animal health and farm environment patterns.",
     ],
     screenshots: [
-      { label: "Farm dashboard", alt: "Cattle ERP IoT mobile dashboard concept", preview: true, expectedPath: "/projects/cattle-iot-erp/preview-1.png" },
-      { label: "IoT environment monitoring", alt: "Cattle ERP IoT temperature and humidity monitoring concept", expectedPath: "/projects/cattle-iot-erp/preview-2.png" },
-      { label: "Animal health and insights", alt: "Cattle ERP IoT animal health and AI insights concept", expectedPath: "/projects/cattle-iot-erp/preview-3.png" },
+      { label: "Herd health and alerts", src: "/projects/cattle-iot-erp/screen-1.png", alt: "Cattle IoT herd dashboard, animal health profile, temperature and activity charts, and alerts" },
+      { label: "Cattle records and activity", src: "/projects/cattle-iot-erp/screen-2.png", alt: "Cattle IoT farm dashboard, animal activity charts, and searchable herd records" },
+      { label: "Barn sensor monitoring", src: "/projects/cattle-iot-erp/screen-3.png", alt: "Cattle IoT mobile sensor controls, barn monitoring, and animal temperature history" },
     ],
   },
 ];

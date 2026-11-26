@@ -6,7 +6,7 @@ import { useState, type CSSProperties } from "react";
 import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
 import { TechIcon } from "@/components/tech-icon";
 import { ProjectArtwork } from "@/components/project-artwork";
-import { Testimonials } from "@/components/testimonials";
+import { ProjectNotes } from "@/components/project-notes";
 import { projects, technologies, technologyDescriptions, type Project, type ProjectCategory } from "@/lib/projects";
 
 function Icon({ name, size = 18 }: { name: "arrow" | "menu" | "close" | "spark" | "code" | "mail"; size?: number }) {
@@ -116,7 +116,7 @@ export default function Home() {
             <a href="#work" onClick={closeMenu}>Work</a>
             <a href="#about" onClick={closeMenu}>About</a>
             <a href="#stack" onClick={closeMenu}>Tech stack</a>
-            <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
+            <a href="#project-notes" onClick={closeMenu}>Project notes</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
           </nav>
           <a className="header-cta" href="#contact">Let’s talk <Icon name="arrow" size={15} /></a>
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="availability"><span /><span>Building thoughtful web experiences</span></div>
             <p className="eyebrow"><span>Full Stack Developer</span><i /> <span>PAKISTAN · AVAILABLE WORLDWIDE</span></p>
             <h1 id="hero-title">Hi, I’m Ashar.<br />I build <em>useful</em><br className="desktop-break" /> things for the web<span className="hero-period">.</span></h1>
-            <p className="hero-intro">Frontend-focused developer creating considered interfaces, Shopify experiences, and web apps that make everyday work feel simpler.</p>
+            <p className="hero-intro">Frontend-focused developer creating considered interfaces, Shopify experiences, and mobile apps that make everyday work feel simpler.</p>
             <div className="hero-actions">
               <a className="button button-dark" href="#work">Explore selected work <Icon name="arrow" size={16} /></a>
               <a className="button button-light" href="#contact"><Icon name="mail" size={16} /> Get in touch</a>
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
           </div>
           <div className="projects-grid">{shownProjects.map((project) => <ProjectCard key={project.id} project={project} />)}</div>
-          <div className="work-footnote" data-reveal><span className="footnote-star">✦</span><p>Royal AI POS, Cattle ERP, and AI Smart Ledger are selected work with supplied screenshots. Newly proposed apps and systems remain marked as concepts, with designed previews ready to replace as real screens become available.</p></div>
+          <div className="work-footnote" data-reveal><span className="footnote-star">✦</span><p>Royal AI POS, Cattle ERP, and AI Smart Ledger are selected work with supplied screenshots. The four React Native app designs include their original screen galleries and are labeled as concepts.</p></div>
         </section>
 
         <section className="about-section section-shell" id="about" aria-labelledby="about-title">
@@ -174,12 +174,11 @@ export default function Home() {
           <div className="stack-note" data-reveal><span className="stack-note-icon"><Icon name="spark" size={18} /></span><p>Always learning. Currently exploring better patterns for <strong>accessible, fast, and maintainable</strong> interfaces.</p><span className="note-arrow">↘</span></div>
         </section>
 
-        <section className="testimonials-section section-shell" id="testimonials" aria-labelledby="testimonials-title">
-          <div className="section-heading testimonials-heading" data-reveal>
-            <div><p className="section-kicker"><span>04</span> CLIENT FEEDBACK</p><h2 id="testimonials-title">Kind words from <em>good people.</em></h2><p className="section-intro">A text-only carousel for approved feedback from clients in the United States and Pakistan.</p></div>
-            <div className="review-locations"><span><i /> United States</span><span><i /> Pakistan</span></div>
+        <section className="project-notes-section section-shell" id="project-notes" aria-labelledby="project-notes-title">
+          <div className="section-heading project-notes-heading" data-reveal>
+            <div><p className="section-kicker"><span>04</span> PRODUCT THINKING</p><h2 id="project-notes-title">The thinking behind <em>the screens.</em></h2><p className="section-intro">A few notes on the workflows represented in these four mobile app concepts.</p></div>
           </div>
-          <div className="testimonial-wrap" data-reveal><Testimonials /></div>
+          <div className="project-notes-wrap" data-reveal><ProjectNotes /></div>
         </section>
 
         <section className="contact-section section-shell" id="contact" aria-labelledby="contact-title">
@@ -190,7 +189,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#top">ashar<span>.</span></a><p>Thoughtful interfaces.<br />Useful products.</p><div className="footer-links"><a href="#work">Work</a><a href="#about">About</a><a href="#stack">Tech stack</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div><a className="footer-connect" href="#contact">Let’s work together <Icon name="arrow" size={15} /></a></div><div className="footer-legal"><span>© 2026 Ashar</span><span>Designed & built with care <b>✳</b></span><a href="#top">Back to top ↑</a></div></footer>
+      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#top">ashar<span>.</span></a><p>Thoughtful interfaces.<br />Useful products.</p><div className="footer-links"><a href="#work">Work</a><a href="#about">About</a><a href="#stack">Tech stack</a><a href="#project-notes">Project notes</a><a href="#contact">Contact</a></div><a className="footer-connect" href="#contact">Let’s work together <Icon name="arrow" size={15} /></a></div><div className="footer-legal"><span>© 2026 Ashar</span><span>Designed & built with care <b>✳</b></span><a href="#top">Back to top ↑</a></div></footer>
     </>
   );
 }
